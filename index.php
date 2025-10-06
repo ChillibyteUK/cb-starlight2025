@@ -101,18 +101,30 @@ get_header();
 						$categories = implode( ' ', wp_list_pluck( $categories, 'slug' ) );
 					}
 					?>
-					<div class="col-md-6 col-lg-4 mb-4" data-aos="fade" data-category="<?= esc_attr( $categories ); ?>">
-						<a href="<?= esc_url( get_permalink() ); ?>" class="latest-insights__item">
-							<div class="latest-insights__img-wrapper">
-								<?= get_the_post_thumbnail( get_the_ID(), 'large', array( 'class' => 'img-fluid mb-3' ) ); ?>
-							</div>
-							<h3><?= esc_html( get_the_title() ); ?></h3>
-							<div class="latest-insights__inner">
+
+					<div class="col-md-6 col-lg-3 mb-4" data-aos="fade" data-category="<?= esc_attr( $categories ); ?>">
+						<a href="<?php the_permalink(); ?>" class="latest-posts__card d-flex flex-column h-100">
+							<?php
+							if ( has_post_thumbnail() ) {
+								?>
+								<div class="latest-posts__image-wrapper">
+									<?= get_the_post_thumbnail( get_the_ID(), 'medium', array( 'class' => 'latest-posts__image' ) ); ?>
+								</div>
+								<?php
+							}
+							?>
+							<div class="latest-posts__body d-flex flex-column flex-grow-1">
+								<h3 class="h5 card-title mb-3">
+									<?= esc_html( get_the_title() ); ?>
+								</h3>
 								<div class="latest-insights__meta">
 									<span><i class="fa-regular fa-calendar"></i> <?= esc_html( get_the_date( 'jS F Y' ) ); ?></span>
 									<span><i class="fa-regular fa-clock"></i> <?= wp_kses_post( estimate_reading_time_in_minutes( get_the_content() ) ); ?> minute read</span>
 								</div>
-								<div class="text-secondary-900"><?= wp_kses_post( get_clean_excerpt( null, 25 ) ); ?></div>
+								<p class="card-text">
+									<?= wp_kses_post( wp_trim_words( get_clean_excerpt(), 15, '...' ) ); ?>
+								</p>
+								<span class="mt-auto"><i class="fas fa-plus"></i></span>
 							</div>
 						</a>
 					</div>
