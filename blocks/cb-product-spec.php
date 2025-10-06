@@ -64,7 +64,7 @@ $block_uid = 'product-spec' . uniqid();
 						</h3>
 						<div id="<?= esc_attr( $block_uid ); ?>-gallery" class="accordion-collapse collapse" data-bs-parent="#<?= esc_attr( $block_uid ); ?>-accordion">
 							<div class="accordion-body">
-								<?php 
+								<?php
 								$gallery = get_field( 'gallery' );
 								if ( $gallery ) :
 									?>

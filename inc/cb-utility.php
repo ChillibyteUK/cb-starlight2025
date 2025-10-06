@@ -31,6 +31,71 @@ function split_lines( $content ) {
     return $content;
 }
 
+/**
+ * Clean Visual Composer and other unwanted content from excerpts.
+ *
+ * @param string $content The content to clean.
+ * @return string The cleaned content.
+ */
+function clean_excerpt( $content ) {
+    // Remove Visual Composer shortcodes.
+    $content = preg_replace( '/\[vc_[^\]]*\]/', '', $content );
+    $content = preg_replace( '/\[\/vc_[^\]]*\]/', '', $content );
+
+    // Remove other common shortcodes.
+    $content = preg_replace( '/\[[^\]]*\]/', '', $content );
+
+    // Remove HTML tags.
+    $content = wp_strip_all_tags( $content );
+
+    // Remove extra whitespace and line breaks.
+    $content = preg_replace( '/\s+/', ' ', $content );
+    $content = trim( $content );
+
+    // Remove common VC artifacts.
+    $content = str_replace( array( '&nbsp;', '&#8203;' ), ' ', $content );
+
+    return $content;
+}
+
+/**
+ * Get clean excerpt for a post.
+ *
+ * @param int    $post_id Optional. Post ID. Default current post.
+ * @param int    $length  Optional. Excerpt length in words. Default 55.
+ * @param string $more    Optional. What to append if excerpt needs to be trimmed. Default '...'.
+ * @return string The clean excerpt.
+ */
+function get_clean_excerpt( $post_id = null, $length = 55, $more = '...' ) {
+    if ( ! $post_id ) {
+        $post_id = get_the_ID();
+    }
+
+    $post = get_post( $post_id );
+    if ( ! $post ) {
+        return '';
+    }
+
+    // Try to get manual excerpt first.
+    if ( ! empty( $post->post_excerpt ) ) {
+        $excerpt = $post->post_excerpt;
+    } else {
+        // Use content if no manual excerpt.
+        $excerpt = $post->post_content;
+    }
+
+    // Clean the excerpt.
+    $excerpt = clean_excerpt( $excerpt );
+
+    // Trim to specified length.
+    if ( str_word_count( $excerpt ) > $length ) {
+        $words   = explode( ' ', $excerpt );
+        $excerpt = implode( ' ', array_slice( $words, 0, $length ) ) . $more;
+    }
+
+    return $excerpt;
+}
+
 add_shortcode(
     'contact_address',
     function () {
@@ -278,7 +343,7 @@ function get_the_top_ancestor_id() {
  * This function replaces specific characters in the input string with their escaped equivalents
  * before encoding it into JSON format.
  *
- * @param string $input_string The input string to encode.
+ * @param string $content The input string to encode.
  * @return string The JSON-encoded string with additional escaping.
  */
 function cb_json_encode( $content ) {
@@ -674,9 +739,12 @@ function get_gutenberg_h2_headings_from_page() {
 /**
  * Disable Contact Form 7 autop (no <p>/<br> wrapping).
  */
-add_filter( 'wpcf7_autop_or_not', function () {
-    return false;
-} );
+add_filter(
+	'wpcf7_autop_or_not',
+	function () {
+		return false;
+	}
+);
 
 /**
  * Disables TinyMCE cleanup to prevent stripping of JavaScript.

@@ -12,28 +12,27 @@ $page_for_posts = get_option( 'page_for_posts' );
 get_header();
 ?>
 <main id="main">
-	<section class="page-hero">
-		<?=
-		wp_get_attachment_image(
-			get_post_thumbnail_id( $page_for_posts ),
-			'full',
-			false,
-			array(
-				'class' => 'page-hero__image',
-			)
-		);
-		?>
-		<div class="page-hero__overlay"></div>
+	<section class="product-hero has-primary-900-background-color has-white-color">
 		<div class="container">
-			<div class="row h-100 align-items-center">
-				<div class="col-md-8 col-lg-6 col-xl-4 page-hero__content">
-					<h1>News &amp; Insights</h1>
-					<p class="subtitle">Expert advice, industry updates, and company news.</p>
-					<a href="/request-survey/" class="btn btn--primary mb-4">Request a Survey</a>
-					<div class="d-flex gap-4 justify-content-start">
-						<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/gate-safe-logo.webp' ); ?>" class="mb-4" width="118" height="74">
-						<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/safecontractor-sticker.webp' ); ?>" class="mb-4" width="74" height="74">
+			<div class="row align-items-center">
+				<div class="col-md-6 py-5 ps-md-5" data-aos="fade-right">
+					<h1 class="h2 mb-4">News &amp; Insights</h1>
+					<div class="has-left-border">
+						<p class="subtitle">Expert advice, industry updates, and company news.</p>
+						<a href="/contact/" class="btn mb-4">Contact Us</a>
 					</div>
+				</div>
+				<div class="col-md-6 pe-md-0" data-aos="fade-left">
+					<?php
+					wp_get_attachment_image(
+						get_post_thumbnail_id( $page_for_posts ),
+						'full',
+						false,
+						array(
+							'class' => 'page-hero__image',
+						)
+					);
+					?>
 				</div>
 			</div>
 		</div>
@@ -102,18 +101,18 @@ get_header();
 						$categories = implode( ' ', wp_list_pluck( $categories, 'slug' ) );
 					}
 					?>
-					<div class="col-md-6 col-lg-4" data-aos="fade" data-aos-delay="<?= esc_attr( $d ); ?>" data-category="<?= esc_attr( $categories ); ?>">
-						<a href="<?= esc_url( get_permalink() ) ?>" class="latest-insights__item">
+					<div class="col-md-6 col-lg-4 mb-4" data-aos="fade" data-category="<?= esc_attr( $categories ); ?>">
+						<a href="<?= esc_url( get_permalink() ); ?>" class="latest-insights__item">
 							<div class="latest-insights__img-wrapper">
 								<?= get_the_post_thumbnail( get_the_ID(), 'large', array( 'class' => 'img-fluid mb-3' ) ); ?>
 							</div>
+							<h3><?= esc_html( get_the_title() ); ?></h3>
 							<div class="latest-insights__inner">
-								<h3><?= esc_html( get_the_title() ) ?></h3>
 								<div class="latest-insights__meta">
 									<span><i class="fa-regular fa-calendar"></i> <?= esc_html( get_the_date( 'jS F Y' ) ); ?></span>
 									<span><i class="fa-regular fa-clock"></i> <?= wp_kses_post( estimate_reading_time_in_minutes( get_the_content() ) ); ?> minute read</span>
 								</div>
-								<div class="text-secondary-900"><?= esc_html( get_the_excerpt() ); ?></div>
+								<div class="text-secondary-900"><?= wp_kses_post( get_clean_excerpt( null, 25 ) ); ?></div>
 							</div>
 						</a>
 					</div>
