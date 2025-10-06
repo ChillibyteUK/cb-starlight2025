@@ -1,0 +1,10 @@
+.has-black-color {
+    --_bc: var(--col-primary-900);
+}
+.has-white-color {
+    --_bc: var(--col-white);
+}
+.has-left-border {
+    border-left: 1px solid var(--_bc);
+    padding-inline-start: 2rem;
+}

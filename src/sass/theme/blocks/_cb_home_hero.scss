@@ -1,0 +1,18 @@
+.home-hero {
+    height: 70svh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--col-white);
+
+    h1 {
+        font-weight: 300;
+        line-height: var(--lh-snug);
+        span {
+            font-weight: 600;
+        }
+    }
+    #animated-word {
+        font-weight: 300;
+    }
+}

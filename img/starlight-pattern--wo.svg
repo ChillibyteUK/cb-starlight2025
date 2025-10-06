@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.39 97.7">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path id="Path_1765" data-name="Path 1765" class="cls-1" d="M4.07,5.2c-1.09,1.39-1.69,3.1-1.71,4.87v37.05l43.03-1.41L4.24,5.2h-.17Z"/>
+      <path id="Path_1819" data-name="Path 1819" class="cls-1" d="M104.2,47.12V10.07c-.02-1.77-.63-3.48-1.71-4.87l-41.15,40.51s42.86,1.41,42.86,1.41Z"/>
+      <path id="Path_1873" data-name="Path 1873" class="cls-1" d="M2.19,50.42v37.05c.02,1.77.63,3.48,1.71,4.87l41.15-40.51-42.86-1.41Z"/>
+      <path id="Path_1927" data-name="Path 1927" class="cls-1" d="M102.48,92.34c1.09-1.39,1.69-3.1,1.71-4.87v-37.05l-43.03,1.41,41.15,40.51h.17Z"/>
+      <path id="Path_1981" data-name="Path 1981" class="cls-1" d="M100.77,3.79c-1.59-1.02-3.43-1.56-5.32-1.57h-40.46l1.54,39.25S100.77,3.79,100.77,3.79Z"/>
+      <path id="Path_2035" data-name="Path 2035" class="cls-1" d="M51.39,2.06H10.93c-1.88,0-3.73.55-5.31,1.57l44.23,37.68,1.54-39.25Z"/>
+      <path id="Path_2089" data-name="Path 2089" class="cls-1" d="M5.62,93.91c1.59,1.02,3.43,1.56,5.31,1.57h40.46l-1.54-39.41L5.62,93.75v.16Z"/>
+      <path id="Path_2143" data-name="Path 2143" class="cls-1" d="M54.99,95.48h40.46c1.88,0,3.73-.55,5.32-1.57l-44.23-37.68-1.54,39.41v-.16Z"/>
+    </g>
+    <rect class="cls-2" width="106.39" height="97.7"/>
+  </g>
+</svg>

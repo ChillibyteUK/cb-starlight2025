@@ -1,0 +1,105 @@
+header {
+  background-color: var(--col-white);
+  transition: var(--transition);
+
+  font-family: var(--ff-heading);
+
+  .navbar {
+    height: 100%;
+  }
+
+  .container {
+    height: 64px;
+  }
+
+  .navbar-toggler {
+    i {
+      color: var(--col-accent-400);
+    }
+  }
+
+  #navbar {
+    border-left: 1px solid var(--col-secondary-light);
+    height: 100%;
+
+  }
+
+  .gap-6 {
+    gap: 4rem !important;
+  }
+
+  .navbar-nav {
+    margin-block: 0;
+  }
+
+  a,
+  a.nav-link {
+    color: var(--col-black);
+    font-size: var(--fs-ui);
+    font-weight: var(--fw-ui);
+    transition: var(--transition);
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0;
+    @media (min-width: 992px) {
+      &:hover {
+        color: var(--col-accent-400);
+        text-decoration: none;
+      }
+    }
+    &:focus {
+      color: var(--col-accent-400);
+      text-decoration: none;
+    }
+  }
+
+  .logo-container {
+    max-width: 240px;
+    margin-right: 1rem;
+  }
+  .logo {
+    background-image: url(../img/starlight.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    aspect-ratio: 254 / 57;
+    width: 254px;
+    height: 57px;
+    max-width: 100%;
+  }
+
+  .current_page_item > .nav-link,
+  .current_page_parent > .nav-link,
+  .dropdown.current-page-ancestor > .nav-link,
+  .dropdown.current-menu-item > .nav-link {
+    color: var(--col-accent-400);
+    font-weight: var(--fw-ui);
+  }
+
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background: var(--col-white);
+      min-height: 100svh;
+      /* Do not set display:flex or height, let Bootstrap animate */
+    }
+    .navbar-nav {
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+    .nav-link,
+    .navbar-nav .nav-link {
+      font-size: var(--fs-subtle);
+      font-weight: var(--fw-ui);
+      padding: 1rem 0;
+    }
+    .dropdown-item {
+      font-size: var(--fs-body);
+    }
+
+    .fs-subtle a {
+      font-size: var(--fs-subtle);
+    }
+  }
+}

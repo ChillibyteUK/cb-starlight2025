@@ -1,0 +1,68 @@
+$col-primary: #27383a;
+$col-dark: #222222;
+$col-darkest: #4a4a4a;
+$col-light: #f2f2f2;
+
+:root {
+  /* =========================
+     COLOURS (HSL + computed)
+     ========================= */
+
+  --col-white-hsl: 0 0% 100%; /* #FFFFFF – pure white */
+  --col-white: hsl(var(--col-white-hsl));
+
+  --col-black-hsl: 0 0% 0%; /* #000000 – pure black */
+  --col-black: hsl(var(--col-black-hsl));
+
+  --col-secondary-light-hsl: 168 11% 91%; /* #E6EBEA – light grey */
+  --col-secondary-light: hsl(var(--col-secondary-light-hsl));
+
+  --col-primary-900-hsl: 168 100% 10%; /* #00352A – dark green */
+  --col-primary-900: hsl(var(--col-primary-900-hsl));
+
+  --col-primary-400-hsl: 173 100% 18%; /* #005A4F – light green */
+  --col-primary-400: hsl(var(--col-primary-400-hsl));
+
+  --col-accent-400-hsl: 2 85% 55%; /* #EE322A – red */
+  --col-accent-400: hsl(var(--col-accent-400-hsl));
+  
+  --col-accent-400-hover-hsl: 2 85% 45%; /* darker red for hover */
+  --col-accent-400-hover: hsl(var(--col-accent-400-hover-hsl));
+
+  /* =========================
+     TYPOGRAPHY (families/weights)
+     ========================= */
+  --ff-heading:
+    "Open Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --ff-body:
+    "Open Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+  --fw-heading: 300; /* Bold */
+  --fw-body: 300; /* Light */
+  --fw-meta: 300; /* Light */
+  --fw-ui: 700; /* Bold */
+  --fw-accent: 700; /* Bold */
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+
+  /* =========================
+     TYPOGRAPHY (responsive sizes)
+     ========================= */
+  --fs-display: clamp(2.25rem, 1.2rem + 2.5vw, 3rem); /* 36→48px */
+  --fs-h2: clamp(1.75rem, 1.1rem + 1.5vw, 2.25rem); /* 28→36px */
+  --fs-h3: clamp(1.25rem, 1.05rem + 0.8vw, 1.5rem); /* 20→24px */
+  --fs-subtle: clamp(1.125rem, 1.02rem + 0.5vw, 1.375rem); /* 18→22px */
+  --fs-body: clamp(1rem, 0.95rem + 0.4vw, 1.125rem); /* 16→18px */
+  --fs-meta: clamp(1rem, 0.98rem + 0.2vw, 1.0625rem); /* 16→17px */
+  --fs-ui: clamp(0.875rem, 0.82rem + 0.3vw, 0.9375rem); /* 14→15px */
+
+  /* === Utilities === */
+  --transition: 250ms ease-out;
+
+  --h-top: 72px;
+  --h-top-desktop: 130px;
+}

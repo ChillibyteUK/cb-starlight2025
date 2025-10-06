@@ -1,0 +1,30 @@
+.showcase {
+    &__card {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            .showcase__image-wrapper img {
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__image-wrapper {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+    }
+    h3 {
+        color: var(--col-white);
+        font-weight: var(--fw-ui);
+        font-size: var(--fs-body);
+    }
+}
