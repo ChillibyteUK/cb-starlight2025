@@ -102,7 +102,7 @@ get_header();
 					}
 					?>
 
-					<div class="col-md-6 col-lg-3 mb-4" data-aos="fade" data-category="<?= esc_attr( $categories ); ?>">
+					<div class="col-md-6 col-lg-4 mb-4" data-aos="fade" data-category="<?= esc_attr( $categories ); ?>">
 						<a href="<?php the_permalink(); ?>" class="latest-posts__card d-flex flex-column h-100">
 							<?php
 							if ( has_post_thumbnail() ) {
