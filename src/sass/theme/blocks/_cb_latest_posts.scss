@@ -32,4 +32,11 @@
     .fas {
         color: var(--col-accent-400);
     }
+    &__meta {
+        font-size: var(--fs-ui);
+        color: var(--col-accent-400);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
 }

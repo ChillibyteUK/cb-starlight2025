@@ -22169,6 +22169,13 @@ header .dropdown.current-menu-item > .nav-link {
 .latest-posts .fas {
   color: var(--col-accent-400);
 }
+.latest-posts__meta {
+  font-size: var(--fs-ui);
+  color: var(--col-accent-400);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 .product-hero {
   background-color: var(--col-primary-900);

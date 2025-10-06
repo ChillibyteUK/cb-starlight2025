@@ -107,9 +107,9 @@ get_header();
 							<?php
 							if ( has_post_thumbnail() ) {
 								?>
-								<div class="latest-posts__image-wrapper">
-									<?= get_the_post_thumbnail( get_the_ID(), 'medium', array( 'class' => 'latest-posts__image' ) ); ?>
-								</div>
+							<div class="latest-posts__image-wrapper">
+								<?= get_the_post_thumbnail( get_the_ID(), 'medium', array( 'class' => 'latest-posts__image' ) ); ?>
+							</div>
 								<?php
 							}
 							?>
@@ -117,7 +117,7 @@ get_header();
 								<h3 class="h5 card-title mb-3">
 									<?= esc_html( get_the_title() ); ?>
 								</h3>
-								<div class="latest-insights__meta">
+								<div class="latest-posts__meta">
 									<span><i class="fa-regular fa-calendar"></i> <?= esc_html( get_the_date( 'jS F Y' ) ); ?></span>
 									<span><i class="fa-regular fa-clock"></i> <?= wp_kses_post( estimate_reading_time_in_minutes( get_the_content() ) ); ?> minute read</span>
 								</div>
