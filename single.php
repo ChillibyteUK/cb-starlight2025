@@ -112,7 +112,7 @@ get_header();
 							}
 							?>
 							<a class="latest_posts__item service-cards__card mb-4" href="<?= esc_url( get_permalink() ); ?>">
-								<div class="latest_posts__image service-cards__image">
+								<div class="latest_posts__image service-cards__image-wrapper">
 									<?php
 									/*
 									if ( $first_category ) {
@@ -126,7 +126,7 @@ get_header();
 									}
 									*/
 									?>
-									<?= get_the_post_thumbnail( get_the_ID(), 'large', array( 'class' => 'img-fluid' ) ); ?>
+									<?= get_the_post_thumbnail( get_the_ID(), 'large', array( 'class' => 'img-fluid service-cards__image' ) ); ?>
 								</div>
 								<div class="service-cards__content">
 									<div class="post_meta">
