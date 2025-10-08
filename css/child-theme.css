@@ -21604,11 +21604,16 @@ h1,
 h2,
 .h2 {
   font-family: var(--ff-heading);
-  font-weight: var(--fw-heading);
+  font-weight: var(--fw-heading) !important;
   font-size: var(--fs-h2);
   line-height: var(--lh-tight);
   letter-spacing: -0.005em;
   text-wrap: balance;
+}
+
+.blog h2, .blog .h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h3,
@@ -22266,6 +22271,7 @@ header .dropdown.current-menu-item > .nav-link {
   background-position: center;
 }
 .product-hero .container, .product-hero .wp-block-group:not(.alignfull) {
+  min-height: 500px;
   background-color: var(--col-primary-900);
 }
 .product-hero .swiper-slide {

@@ -5,6 +5,7 @@
     background-size: 100px;
     background-position: center;
     .container {
+        min-height: 500px;
         background-color: var(--col-primary-900);
     }
 
