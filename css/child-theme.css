@@ -22272,11 +22272,13 @@ header .dropdown.current-menu-item > .nav-link {
 }
 .product-hero .container, .product-hero .wp-block-group:not(.alignfull) {
   min-height: 500px;
+  height: 500px;
   background-color: var(--col-primary-900);
 }
 .product-hero .swiper-slide {
   width: 100%;
   height: 100%;
+  height: 500px;
 }
 .product-hero .swiper-slide img {
   width: 100%;
