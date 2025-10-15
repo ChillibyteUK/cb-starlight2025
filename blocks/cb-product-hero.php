@@ -41,7 +41,7 @@ defined( 'ABSPATH' ) || exit;
 							foreach ( $images as $image ) {
 								?>
 								<div class="swiper-slide">
-									<?= wp_get_attachment_image( $image, 'large', false, array( 'class' => 'img-fluid' ) ); ?>
+									<?= wp_get_attachment_image( $image, 'full', false, array( 'class' => 'img-fluid' ) ); ?>
 								</div>
 								<?php
 							}
