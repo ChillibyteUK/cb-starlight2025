@@ -22421,6 +22421,39 @@ header .dropdown.current-menu-item > .nav-link {
   font-size: var(--fs-ui);
 }
 
+.doclist__item {
+  text-decoration: none;
+  height: 100%;
+  color: var(--col-black);
+}
+.doclist__item:hover {
+  text-decoration: none;
+}
+.doclist__item:hover .doclist__image {
+  transform: scale(1.05);
+}
+.doclist__image-wrapper {
+  width: calc(100% - 2rem);
+  margin: 0 1rem 1.5rem 1rem;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  position: relative;
+}
+.doclist__image {
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.doclist__body {
+  padding: 0 1rem 0 1rem;
+}
+
 body {
   background-color: var(--col-white);
 }

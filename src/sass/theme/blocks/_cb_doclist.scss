@@ -1,0 +1,33 @@
+.doclist {
+    &__item {
+        text-decoration: none;
+        height: 100%;
+        color: var(--col-black);
+        &:hover {
+            text-decoration: none;
+            .doclist__image {
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__image-wrapper {
+        width: calc(100% - 2rem);
+        margin: 0 1rem 1.5rem 1rem;
+        aspect-ratio: 3 / 2;
+        overflow: hidden;
+        position: relative;
+    }
+    &__image {
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__body {
+        padding: 0 1rem 0 1rem;
+    }
+}
