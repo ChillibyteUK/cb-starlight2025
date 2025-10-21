@@ -16,35 +16,35 @@ defined( 'ABSPATH' ) || exit;
 				<div class="row g-5">
 					<div class="col-sm-6 col-md-3 text-center">
 						<div class="usp-icon"><i class="fas fa-star fa-2x"></i></div>
-						<span class="usp-title">Lifetime warranties</span>
+						<span class="usp-title">Unrivalled Experience</span>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<div class="usp-icon"><i class="fas fa-star fa-2x"></i></div>
-						<span class="usp-title">Online inventory tool</span>
+						<span class="usp-title">Customised Project Management</span>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<div class="usp-icon"><i class="fas fa-star fa-2x"></i></div>
-						<span class="usp-title">24/7 support</span>
+						<span class="usp-title">24/7 Support</span>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<div class="usp-icon"><i class="fas fa-star fa-2x"></i></div>
-						<span class="usp-title">Secure storage facility</span>
+						<span class="usp-title">Secure Storage Facility</span>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<div class="usp-icon"><i class="fas fa-star fa-2x"></i></div>
-						<span class="usp-title">Installation &amp; breakdown</span>
+						<span class="usp-title">Free Design &amp; Visualisation</span>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<div class="usp-icon"><i class="fas fa-star fa-2x"></i></div>
-						<span class="usp-title">Exhibition management</span>
+						<span class="usp-title">High Quality Systems</span>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<div class="usp-icon"><i class="fas fa-star fa-2x"></i></div>
-						<span class="usp-title">Exhibition graphics</span>
+						<span class="usp-title">Global Reach, Local Reliability</span>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<div class="usp-icon"><i class="fas fa-star fa-2x"></i></div>
-						<span class="usp-title">Exhibition stand hire</span>
+						<span class="usp-title">Cost Optimisation</span>
 					</div>
 				</div>
 			</div>
