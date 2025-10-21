@@ -36,6 +36,7 @@ defined( 'ABSPATH' ) || exit;
 							<?php
 						}
 						?>
+						<a href="/contact/" class="btn">Request a Quote</a>
 					</div>
 				</div>
 				<?php
