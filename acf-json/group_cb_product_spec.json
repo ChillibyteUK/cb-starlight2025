@@ -189,6 +189,23 @@
             "delay": 0
         },
         {
+            "key": "field_68fa3fc81ad44",
+            "label": "CTA",
+            "name": "cta",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_68e39c947f23d",
             "label": "Image",
             "name": "",
@@ -251,5 +268,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759749792
+    "display_title": "",
+    "modified": 1761230809
 }

@@ -109,6 +109,19 @@ $block_uid = 'product-spec' . uniqid();
 						<div id="<?= esc_attr( $block_uid ); ?>-sizes" class="accordion-collapse collapse" data-bs-parent="#<?= esc_attr( $block_uid ); ?>-accordion">
 							<div class="accordion-body">
 								<?= wp_kses_post( get_field( 'available_sizes' ) ); ?>
+								<?php
+								$cta = get_field( 'cta' );
+								if ( $cta ) {
+									?>
+									<p class="mt-4">
+										<a class="btn" href="<?= esc_url( $cta['url'] ); ?>"
+											target="<?= esc_attr( $cta['target'] ? $cta['target'] : '_self' ); ?>">
+											<?= esc_html( $cta['title'] ); ?>
+										</a>
+									</p>
+									<?php
+								}
+								?>
 							</div>
 						</div>
 					</div>
