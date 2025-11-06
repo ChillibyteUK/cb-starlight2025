@@ -14,6 +14,7 @@ $words_array = array_filter( array_map( 'trim', explode( "\n", $words ) ) );
 
 ?>
 <section class="home-hero" style="background-image: url(<?= esc_url( wp_get_attachment_image_url( $bg, 'large', false ) ); ?>)">
+    <div class="overlay"></div>
     <div class="container pt-5">
 		<div class="row pt-5">
 			<div class="col-md-6">

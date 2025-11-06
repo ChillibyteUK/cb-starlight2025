@@ -20,7 +20,11 @@ defined( 'ABSPATH' ) || exit;
 			foreach ( $images as $image ) {
 				?>
 				<div class="col-md-4 mb-4 gallery-item-wrapper">
-					<a href="<?= esc_url( wp_get_attachment_image_url( $image['ID'], 'full' ) ); ?>" class="gallery__link image-16x9 glightbox" data-glightbox="description: .desc_<?= esc_attr( $c ); ?>;" data-gallery="work-gallery-all" data-type="image">
+					<a href="<?= esc_url( wp_get_attachment_image_url( $image['ID'], 'full' ) ); ?>"
+					class="gallery__link image-16x9 glightbox"
+					data-gallery="work-gallery-all"
+					data-glightbox="description: .desc_<?= esc_attr( $c ); ?>;"
+					data-type="image">
 						<?= wp_get_attachment_image( $image['ID'], 'large', false, array( 'class' => 'gallery__image' ) ); ?>
 					</a>
 					<div class="glightbox-desc desc_<?= esc_attr( $c ); ?>">

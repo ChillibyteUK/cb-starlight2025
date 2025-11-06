@@ -4,6 +4,21 @@
     background-repeat: no-repeat;
     background-position: center;
     color: var(--col-white);
+    position: relative;
+    isolation: isolate;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); // semi-transparent black overlay
+        z-index: 1;
+    }
+    .container {
+        position: relative;
+        z-index: 2; // ensure content is above the overlay
+    }
 
     h1 {
         font-weight: 300;
