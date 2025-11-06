@@ -126,7 +126,7 @@ $block_uid = 'product-spec' . uniqid();
 									<div class="row g-2">
 										<?php
 										$gal = 1;
-										foreach ( $agallery as $image ) {
+										foreach ( $gallery as $image ) {
 											?>
 											<div class="col-md-3">
 												<a href="<?= esc_url( wp_get_attachment_image_url( $image['ID'], 'full' ) ); ?>" 
