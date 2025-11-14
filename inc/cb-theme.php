@@ -202,7 +202,7 @@ function lc_theme_enqueue() {
     wp_enqueue_style( 'glightbox-style', 'https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.min.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'glightbox', 'https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js', array(), $the_theme->get( 'Version' ), true );
 
-    wp_deregister_script( 'jquery' );
+    // wp_deregister_script( 'jquery' ); // needed for Tribe Events plugin.
 }
 add_action( 'wp_enqueue_scripts', 'lc_theme_enqueue' );
 
