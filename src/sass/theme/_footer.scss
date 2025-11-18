@@ -73,4 +73,14 @@
       }
     }
   }
+
+  .cb {
+    content: url(../img/cb-mono.png);
+    transition: opacity var(--transition);
+    opacity: 0.2;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
 }

@@ -71,7 +71,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
             <div>
 				<a href="/privacy-policy/">Privacy</a> & <a href="/cookie-policy/">Cookies</a> |
-                <a href="https://www.chillibyte.co.uk/" rel="nofollow noopener" target="_blank"></a>
+                <a href="https://www.chillibyte.co.uk/" class="cb" rel="nofollow noopener" target="_blank" title="Digital Marketing by Chillibyte"></a>
             </div>
         </div>
 </footer>

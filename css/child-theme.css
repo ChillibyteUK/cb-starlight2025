@@ -22015,6 +22015,14 @@ header .dropdown.current-menu-item > .nav-link {
 .footer .colophon a:hover {
   color: var(--col-primary-400);
 }
+.footer .cb {
+  content: url(../img/cb-mono.png);
+  transition: opacity var(--transition);
+  opacity: 0.2;
+}
+.footer .cb:hover {
+  opacity: 0.8;
+}
 
 .post_meta {
   padding-inline: 1rem;
