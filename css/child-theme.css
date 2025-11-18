@@ -22010,15 +22010,16 @@ header .dropdown.current-menu-item > .nav-link {
 .footer .colophon a {
   color: var(--col-white);
   text-decoration: none;
-  transition: color var(--transition);
+  transition: color var(--transition), opacity var(--transition);
 }
 .footer .colophon a:hover {
   color: var(--col-primary-400);
 }
 .footer .cb {
   content: url(../img/cb-mono.png);
-  transition: opacity var(--transition);
   opacity: 0.2;
+  position: relative;
+  top: 3px;
 }
 .footer .cb:hover {
   opacity: 0.8;
