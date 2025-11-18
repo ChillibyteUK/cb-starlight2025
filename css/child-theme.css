@@ -22199,6 +22199,7 @@ header .dropdown.current-menu-item > .nav-link {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+  width: 72px;
 }
 .usp-block .usp-title {
   font-weight: var(--fw-ui);
