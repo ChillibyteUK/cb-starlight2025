@@ -67,7 +67,7 @@ defined( 'ABSPATH' ) || exit;
 
         <div class="colophon d-flex justify-content-between align-items-center flex-wrap">
             <div>
-                &copy; <?= esc_html( gmdate( 'Y' ) ); ?> Starlight Exhibitions Limited. Registered in England, no. 99999999
+                &copy; <?= esc_html( gmdate( 'Y' ) ); ?> Nomadic Structures UK Limited T/A Starlight Exhibitions. Registered in England, no. 01994191
             </div>
             <div>
 				<a href="/privacy-policy/">Privacy</a> & <a href="/cookie-policy/">Cookies</a> |
