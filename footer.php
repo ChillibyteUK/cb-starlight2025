@@ -70,7 +70,7 @@ defined( 'ABSPATH' ) || exit;
                 &copy; <?= esc_html( gmdate( 'Y' ) ); ?> Starlight Exhibitions Limited. Registered in England, no. 99999999
             </div>
             <div>
-				<a href="/terms-of-use/">Terms of use</a> | <a href="/privacy-policy/">Privacy</a> & <a href="/cookie-policy/">Cookies</a> |
+				<a href="/privacy-policy/">Privacy</a> & <a href="/cookie-policy/">Cookies</a> |
                 <a href="https://www.chillibyte.co.uk/" rel="nofollow noopener" target="_blank"></a>
             </div>
         </div>
