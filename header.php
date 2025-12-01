@@ -26,7 +26,7 @@ if ( session_status() === PHP_SESSION_NONE ) {
         href="<?= esc_url( get_stylesheet_directory_uri() . '/fonts/open-sans-v44-latin-300.woff2' ); ?>"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?= esc_url( get_stylesheet_directory_uri() . '/fonts/open-sans-v44-latin-600.woff2' ); ?>"
+        href="<?= esc_url( get_stylesheet_directory_uri() . '/fonts/open-sans-v44-latin-700.woff2' ); ?>"
         as="font" type="font/woff2" crossorigin="anonymous">
     <?php
     if ( ! is_user_logged_in() ) {
